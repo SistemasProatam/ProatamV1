@@ -1,0 +1,55 @@
+[27-Jan-2026 19:06:53 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fecha_contrato' in 'field list' in C:\xampp\htdocs\PROATAM\users\insert_user.php:354
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(354): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 354
+[27-Jan-2026 19:06:53 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fecha_contrato' in 'field list' in C:\xampp\htdocs\PROATAM\users\insert_user.php:354
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(354): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 354
+[27-Jan-2026 19:07:45 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\PROATAM\users\insert_user.php:261
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(261): mysqli_stmt->bind_param('ssssssisssss', 'prueba', 'nueva', 'prueba@proatam....', '', '', '$2y$10$/9h1VSoK...', 1, '14', '', '2026-01-05', '', '', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 261
+[27-Jan-2026 19:07:45 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\PROATAM\users\insert_user.php:261
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(261): mysqli_stmt->bind_param('ssssssisssss', 'prueba', 'nueva', 'prueba@proatam....', '', '', '$2y$10$m1u.XZGM...', 1, '14', '', '2026-01-05', '', '', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 261
+[27-Jan-2026 19:08:49 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\PROATAM\users\insert_user.php:261
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(261): mysqli_stmt->bind_param('ssssssisssss', 'prueba', 'nueva', 'prueba@proatam....', '', '', '$2y$10$ec4I9wj8...', 1, '14', '', '2026-01-05', '', '', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 261
+[27-Jan-2026 19:22:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fecha_contrato' in 'field list' in C:\xampp\htdocs\PROATAM\users\insert_user.php:354
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(354): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 354
+[27-Jan-2026 19:49:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fecha_contrato' in 'field list' in C:\xampp\htdocs\PROATAM\users\insert_user.php:354
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(354): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 354
+[27-Jan-2026 19:52:59 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fecha_contrato' in 'field list' in C:\xampp\htdocs\PROATAM\users\insert_user.php:354
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(354): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 354
+[27-Jan-2026 19:53:00 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fecha_contrato' in 'field list' in C:\xampp\htdocs\PROATAM\users\insert_user.php:354
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(354): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 354
+[27-Jan-2026 19:55:53 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fecha_contrato' in 'field list' in C:\xampp\htdocs\PROATAM\users\insert_user.php:360
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(360): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 360
+[27-Jan-2026 19:56:39 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'fecha_contrato' in 'field list' in C:\xampp\htdocs\PROATAM\users\insert_user.php:360
+Stack trace:
+#0 C:\xampp\htdocs\PROATAM\users\insert_user.php(360): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in C:\xampp\htdocs\PROATAM\users\insert_user.php on line 360

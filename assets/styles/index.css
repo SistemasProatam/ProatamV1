@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #3f7555;
+  --primary-light: #113557;
+  --third-color: rgba(239, 239, 239, 0.909);
+  --accent-color: #4a9d6a;
+  --light-accent: rgba(63, 117, 85, 0.1);
+  --accent-color-light: #525252;
+  --dark-overlay: rgba(17, 52, 86, 0.9);
+  --text-light: rgba(255, 255, 255, 0.9);
+  --text-muted: rgba(255, 255, 255, 0.7);
+  --border-radius: 20px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* RESET CRÍTICO - Esto debe ir al inicio */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Estructura principal del body */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.main-container {
+  flex: 1 0 auto; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto 3rem; 
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+  flex: 1; 
+}
+
+/* Si tienes un header, agrega esto */
+header {
+  flex-shrink: 0;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+    font-family: "Montserrat", sans-serif;
+    min-height: 60vh; 
+    justify-content: center; 
+}
+
+.welcome-content h1{
+    color: var(--primary-light);
+}
+
+.welcome-title {
+    font-size: 2rem;
+    color: var(--dark-overlay);
+    font-weight: 700 bold;
+    margin: 0;
+    letter-spacing: 0.3px;
+    position: relative;
+    padding-bottom: 0.2rem;
+}
+
+    .welcome-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(74, 85, 104, 0.8), transparent );
+    }
+
+.welcome-img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12px;
+}
+
+/* Efectos de animación mejorados */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+}
+
+/* Efecto de aparición escalonada */
+.welcome-title {
+    animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+
+.welcome-subtitle {
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.welcome-img {
+    animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+/* Responsive mejorado */
+@media (max-width: 1524px) {
+    .welcome-container {
+        padding: 3rem 2rem;
+        margin: 3rem auto;
+    }
+
+    .welcome-title {
+        font-size: 3.5rem;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .welcome-img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        padding: 2.5rem 1.5rem;
+        margin: 2rem auto;
+        border-radius: 24px;
+        width: 95%;
+    }
+
+    .welcome-title {
+        font-size: 2.8rem;
+        letter-spacing: -1px;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .welcome-img {
+        max-width: 300px;
+    }
+
+    .welcome-content {
+        gap: 2rem;
+        min-height: 50vh; /* Ajuste para móviles */
+    }
+    
+    .content-wrapper {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-container {
+        padding: 2rem 1rem;
+        margin: 1rem auto;
+        border-radius: 20px;
+    }
+
+    .welcome-title {
+        font-size: 2.2rem;
+        letter-spacing: -0.5px;
+    }
+
+    .welcome-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .welcome-img {
+        max-width: 250px;
+    }
+
+    .welcome-content {
+        gap: 1.5rem;
+        min-height: 40vh; 
+    }
+    
+    .content-wrapper {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Mejora de rendimiento para animaciones */
+@media (prefers-reduced-motion: reduce) {
+    .welcome-container,
+    .welcome-content,
+    .welcome-title,
+    .welcome-subtitle,
+    .welcome-img {
+        animation: none;
+    }
+
+        .welcome-img:hover {
+            transform: none;
+        }
+}
+
+/* Clase para contenido largo - asegura que el footer esté abajo */
+.has-long-content .content-wrapper {
+    margin-bottom: auto; 
+}
